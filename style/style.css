@@ -41,7 +41,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 95px;
     width: 100%;
     height: 86vh;
     background: url(https://orby.ru/upload/medialibrary/09d/09d6d303012c5b1ae4b1d3f92a616af9.png) no-repeat 0 -50px;
@@ -187,11 +186,17 @@ trends-twoSided-main-desc > p {
 }
 @media screen and (max-width: 1024px) {
     .trends-bestPrice {
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
     .trends-bestPrice-capture {
-        text-align: center;
+        text-align: left;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .trends-bestPrice-pic {
+        width: 100%;
     }
 }
 
@@ -272,8 +277,9 @@ trends-twoSided-main-desc > p {
     .trends-oversize-itemFirst-capture-mobile > p {
         text-transform: uppercase;
     }
-    .trends-texture-itemFirst-capture-mobile > pm{
+    .trends-texture-itemFirst-capture-mobile > h5 {
         text-transform: uppercase;
+        padding-left: 5%;
     }
 }
 
@@ -371,6 +377,21 @@ trends-twoSided-main-desc > p {
     display: flex;
     justify-content: center;
     flex-direction: row;
+}
+@media screen and (max-width: 1024px)  {
+    .accessories-detail {
+        display: flex;
+        flex-direction: column;
+    }
+    .accessories-desc {
+        text-align: center;
+        display: flex;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+    .accessories-slider-wrap-slide {
+        margin: 0 auto;
+    }
 }
 .accessories-slider {
     width: 500px;
