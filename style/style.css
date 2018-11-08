@@ -113,14 +113,17 @@ img {
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 70px;
 }
 .trends-twoSided-main-pic {
     height: 400px;
+    padding: 0;
     background: url(https://orby.ru/upload/medialibrary/a64/a64b617a33f306abc2c109b3c42641e7.jpg) 100% 100% no-repeat;
     background-size: cover;
     opacity: 1;
     border: 15px solid white;
+}
+.mobile {
+    display: none;
 }
 .trends-twoSided-main-pic > img {
     transition: 0.5s;
@@ -157,14 +160,28 @@ trends-twoSided-main-desc > p {
     .trends-twoSided-main {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .trends-twoSided-main-pic {
-        width: 100%;
+        height: 400px;
+        width: auto;
         margin-bottom: 40px;
+        background: none;
+    }
+    .trends-twoSided-main-pic > img {
+        height: 400px;
+        width: auto;
+    }
+    .trends-twoSided-main-pic > img:hover {
+        opacity: 1;
+    }
+    .mobile {
+        display: block;
     }
     .trends-twoSided-main-desc {
         width: 90%;
         margin-bottom: 40px;
+        text-align: center;
     }
 }
 
@@ -178,10 +195,11 @@ trends-twoSided-main-desc > p {
     width: 50%;
     display: flex;
     align-items: center;
-    padding-left: 5%;
+    padding-left: 15%;
 }
 .trends-bestPrice-pic {
     width: 50%;
+    padding-right: 1.5%;
 
 }
 @media screen and (max-width: 1024px) {
@@ -189,14 +207,14 @@ trends-twoSided-main-desc > p {
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .trends-bestPrice-capture {
         text-align: left;
-        padding: 0;
         padding-bottom: 20px;
     }
     .trends-bestPrice-pic {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -267,12 +285,36 @@ trends-twoSided-main-desc > p {
     .trends-oversize-itemFirst-pic, .trends-texture-itemFirst-pic {
         width: 100%;
         padding-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .trends-oversize-itemSec-pic, .trends-texture-itemSec-pic > img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .trends-texture-itemFirst-pic > img {
+        width: 65%;
+        margin: 0 auto;
+    }
+    .trends-texture-itemSec-pic > img {
+        width: 65%;
+        margin: 0 auto;
+    }
+    .trends-oversize-itemFirst-pic > img {
+        width: 65%;
+        margin: 0 auto;
+    }
+    .trends-oversize-itemSec-pic > img {
+        width: 65%;
+        margin: 0 auto;
     }
     .trends-oversize-itemFirst-capture, .trends-texture-itemFirst-capture {
         display: none;
     }  
-    .trends-oversize-itemFirst-capture-mobile, trends-texture-itemFirst-capture-mobile {
+    .trends-oversize-itemFirst-capture-mobile, .trends-texture-itemFirst-capture-mobile {
         display: block;
+        text-align: center;
     }
     .trends-oversize-itemFirst-capture-mobile > p {
         text-transform: uppercase;
@@ -358,7 +400,7 @@ trends-twoSided-main-desc > p {
     margin: 0;
     padding: 0;
 }
-.accessories-item-scarfs_scarfFirst, accessories-item-scarfs_scarfSec, .accessories-item-gloves_glovesFirst, .accessories-item-gloves_glovesSec {
+.accessories-item-scarfs_scarfFirst, .accessories-item-scarfs_scarfSec, .accessories-item-gloves_glovesFirst, .accessories-item-gloves_glovesSec {
     width: 500px;
     height: 500px;
 }
@@ -373,23 +415,53 @@ trends-twoSided-main-desc > p {
     opacity: 0.00;
 }
 .accessories-detail {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 @media screen and (max-width: 1024px)  {
+    .accessories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .accessories-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 540px;
+    }
+    .accessories-item {
+        width: 49%;
+    }
+    .accessories-item:nth-child(1) {
+        margin-bottom: 550px;
+    }
+    .accessories-item-scarfs_scarfFirst:hover {
+        opacity: 1;
+    }
+    .accessories-item-scarfs_scarfSec {
+        display: none;
+    }
+    .accessories-item-gloves_glovesFirst:hover {
+        opacity: 1;
+    }
+    .accessories-item-gloves_glovesSec {
+        display: none;
+    }
     .accessories-detail {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
     .accessories-desc {
         text-align: center;
-        display: flex;
-        align-self: center;
         margin-bottom: 20px;
     }
-    .accessories-slider-wrap-slide {
+    .accessories-slider {
         margin: 0 auto;
     }
 }
@@ -397,7 +469,6 @@ trends-twoSided-main-desc > p {
     width: 500px;
     height: 500px;
     margin-bottom: 70px;
-    width: 39%;
 }
 .accessories-slider-wrap {
     width: 500px;
