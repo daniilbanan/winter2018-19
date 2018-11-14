@@ -23,6 +23,7 @@ h5 {
     font-size: 25px;
     font-weight: 400;
     text-transform: uppercase;
+    margin-bottom: 25px;
 }
 
 p {
@@ -435,6 +436,10 @@ trends-twoSided-main-desc > p {
     }
     .accessories-item {
         width: 49%;
+    }
+    .accessories-item > h5 {
+        display: flex;
+        align-self: center;
     }
     .accessories-item:nth-child(1) {
         margin-bottom: 550px;
