@@ -17,6 +17,7 @@ h4 {
     font-size: 35px;
     font-weight: 400;
     text-transform: uppercase;
+    margin-bottom: 25px;
 }
 
 h5 {
@@ -30,7 +31,6 @@ p {
     font-size: 18px;
     font-weight: 300;
     color: #333333;
-    margin-top: 20px;
     line-height: 1.5;
 }
 
@@ -75,9 +75,6 @@ img {
 .mainTheme-desc_textFirst, .mainTheme-desc_textSec, .mainTheme-desc_textThrd {
     text-align: center;
 }
-.mainTheme-desc_textSec {
-    margin: 10px 0;
-}
 
 .trends {
     width: 100%;
@@ -98,7 +95,7 @@ img {
     text-align: center;
 }
 .trends-desc_text {
-    margin: 20px 0 70px 0;
+    margin-bottom: 70px;
     text-align: center;
 }
 
@@ -139,10 +136,7 @@ img {
     align-self: center;
     width: 45%;
 }
-.trends-twoSided-main-desc_capture {
-    margin-bottom: 15px;
-}
-trends-twoSided-main-desc > p {
+.trends-twoSided-main-desc > p {
     margin: 5px 0;
 }
 .trends-twoSided-gallery {
