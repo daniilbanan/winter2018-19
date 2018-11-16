@@ -127,6 +127,7 @@ img {
     transition: 0.5s;
     height: 400px;
     width: auto;
+    object-fit: cover;
 }
 .trends-twoSided-main-pic > img:hover {
     opacity: 0;
@@ -149,6 +150,7 @@ img {
 }
 .trends-twoSided-gallery-item > img {
     height: auto;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 1024px) {
@@ -166,6 +168,7 @@ img {
     .trends-twoSided-main-pic > img {
         height: 400px;
         width: auto;
+        object-fit: cover;
     }
     .trends-twoSided-main-pic > img:hover {
         opacity: 1;
@@ -196,6 +199,9 @@ img {
     width: 50%;
     padding-right: 1.5%;
 
+}
+.trends-bestPrice-pic > img {
+    object-fit: cover;
 }
 @media screen and (max-width: 1024px) {
     .trends-bestPrice {
@@ -291,18 +297,22 @@ img {
     .trends-texture-itemFirst-pic > img {
         width: 65%;
         margin: 0 auto;
+        object-fit: cover;
     }
     .trends-texture-itemSec-pic > img {
         width: 65%;
         margin: 0 auto;
+        object-fit: cover;
     }
     .trends-oversize-itemFirst-pic > img {
         width: 65%;
         margin: 0 auto;
+        object-fit: cover;
     }
     .trends-oversize-itemSec-pic > img {
         width: 65%;
         margin: 0 auto;
+        object-fit: cover;
     }
     .trends-oversize-itemFirst-capture, .trends-texture-itemFirst-capture {
         display: none;
